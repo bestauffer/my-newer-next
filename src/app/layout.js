@@ -1,4 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '@/app//layout.module.css';
+import Link from 'next/link';
 
 export default function Layout({ children }) {
   return (
