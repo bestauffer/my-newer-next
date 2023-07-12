@@ -2,9 +2,7 @@
 import '@@/styles/globals.css';
 import React from "react";
 import {useRef} from "react";
-//import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "@@/./config.js";
 
 const Page = () => {
   const form = useRef();
@@ -25,7 +23,7 @@ const Page = () => {
       try {
         //    await axios.get(apiPath)
         //    .then(res => {
-          emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+          emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
       .then((result) => {
         //navigate("/");
           console.log(result.text);
