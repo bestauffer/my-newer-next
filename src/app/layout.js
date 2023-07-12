@@ -1,8 +1,6 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.css';
-import styles from '@/app//layout.module.css';
-import Link from 'next/link';
-import '@/styles/Navbar-Right-Links-Dark-icons.css';
+import '@@/styles/Navbar-Right-Links-Dark-icons.css';
 import React from 'react'
 import { useEffect } from 'react'
 
@@ -52,7 +50,7 @@ export default function Layout({ children }) {
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item"><a class="nav-link" href="/profile/teacher">Portfolio</a></li>
                   <li className="nav-item"><a class="nav-link"  href="/profile/student">Experiance</a></li>
-                  <li className="nav-item"><a class="nav-link" href="/">Contact</a></li>
+                  <li className="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                 </ul>
               </div>
             </div>
