@@ -8,9 +8,8 @@ import { useEffect } from 'react'
 export default function Layout({ children }) {
 
   useEffect(() => {
-    typeof document !== undefined
-      ? require("bootstrap/dist/js/bootstrap")
-      : null;
+require("bootstrap/dist/js/bootstrap");
+
   }, []);
 
 
@@ -65,7 +64,8 @@ export default function Layout({ children }) {
           </nav>
 
         </header>
-        <div style={{marginTop:"71px"}}>
+
+        <div style={{marginTop: "71px"}}>
           {children}
         </div>
         </div>

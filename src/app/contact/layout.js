@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import styles from '@@/app/layout.module.css';
 
 export default function Layout({ children }) {
 

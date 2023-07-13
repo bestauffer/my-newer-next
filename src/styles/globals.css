@@ -108,15 +108,15 @@ a {
   /* overflow-y: scroll; */
   /* height: 100vh - 85; */
   overflow-y: auto;
-  height:100%;
+  height:auto;
   justify-content: "space-between";
   background-color: grey;
-  
 }
 .content{
   /* display: flex; */
   padding-bottom: 8px;
   border-radius: 0px 0px 20px 20px;
+  display: flex;
   width: 95%;
   flex-direction: column;
   align-self: center;

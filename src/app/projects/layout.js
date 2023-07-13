@@ -16,7 +16,7 @@ export default function Layout({ children }) {
                 <li>KnowBetter App</li>
                 <li>Climbing Buddy App</li>
                 <li>Entity Relationships Trial App</li>
-                <li><a href="https://apps.apple.com/us/app/envko/id1605823113" target="_blank">Envko iOS App</a></li>
+                <li><a rel="noopener noreferrer" href="https://apps.apple.com/us/app/envko/id1605823113" target="_blank">Envko iOS App</a></li>
             </ul>
         </div>
     );
