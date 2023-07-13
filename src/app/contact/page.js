@@ -61,7 +61,7 @@ const Page = () => {
                         <div class="control-group">
                             <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" required="" name="message" placeholder="Message" style={{height: "150px"}}></textarea><label htmlFor="message" class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
                         </div>
-                        <div id="success"></div>
+                        {/* <div id="success"></div> */}
                         <div class="d-flex justify-content-center"><button class="btn btn-primary flex-row btn-xl" id="sendMessageButton" type="submit">{formStatus}</button></div>
                     </form>
                 </div>
