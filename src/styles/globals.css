@@ -121,6 +121,7 @@ a {
   flex-direction: column;
   align-self: center;
   padding-left: 20px;
+  color: white;
   justify-content: "center";
   background-color: black;
 }
