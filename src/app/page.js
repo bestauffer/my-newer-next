@@ -4,7 +4,6 @@ import Script from 'next/script';
 export default function Page() {
   return (
     <>
-    
     <div style={{backgroundColor:"white", padding:"20px 0px 20px 0px"}}class=" justify-content-center d-flex flex-row">
     <div class=" align-items-center justify-content-center d-flex flex-column">
     
@@ -13,10 +12,11 @@ export default function Page() {
       </div>
       <div>
           <a rel="noopener noreferrer" href="https://github.com/bestauffer"><Image unsized alt="Github Banner" src='https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white'/></a>
-        </div>             
+        </div>        
+              
     </div>
     </div>
-    <Script strategy="beforeInteractive" src="https://platform.linkedin.com/badges/js/profile.js" />
+    <Script src="https://platform.linkedin.com/badges/js/profile.js" strategy="lazyOnload" />
     </>
   );
 }
