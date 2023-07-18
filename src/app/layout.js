@@ -1,8 +1,10 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.css';
 import '@@/styles/Navbar-Right-Links-Dark-icons.css';
-import React from 'react'
-import { useEffect } from 'react'
+import React from 'react';
+import { useEffect } from 'react';
+
+import Script from 'next/script';
 
 
 export default function Layout({ children }) {
@@ -69,6 +71,7 @@ require("bootstrap/dist/js/bootstrap");
           {children}
         </div>
         </div>
+        <Script src="https://platform.linkedin.com/badges/js/profile.js" strategy="lazyOnload" />
       </body>
     </html>)
 }
