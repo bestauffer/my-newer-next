@@ -24,7 +24,7 @@ require("bootstrap/dist/js/bootstrap");
     
       <head>
         <title>Blakes Next.js</title>
-        <script src="https://platform.linkedin.com/badges/js/profile.js" defer></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" strategy="beforeInteractive" defer></script>
       </head>
       <body>
         <div>
