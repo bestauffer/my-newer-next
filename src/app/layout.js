@@ -68,7 +68,7 @@ require("bootstrap/dist/js/bootstrap");
           {children}
         </div>
         </div>
-        <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
+        <script src="https://platform.linkedin.com/badges/js/profile.js"/>
       </body>
     </html>
     </>
