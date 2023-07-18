@@ -16,7 +16,7 @@ export default function Page() {
               
     </div>
     </div>
-    <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
+    <Script src="https://platform.linkedin.com/badges/js/profile.js" strategy="lazyOnload" />
     </>
   );
 }

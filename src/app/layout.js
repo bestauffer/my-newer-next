@@ -2,6 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '@@/styles/Navbar-Right-Links-Dark-icons.css';
 import React from 'react'
+import { Html, Head } from 'next/document'
 import { useEffect } from 'react'
 
 
@@ -20,10 +21,10 @@ require("bootstrap/dist/js/bootstrap");
 
 
   return (
-    <html lang="en">
-      <head>
+    <Html lang="en">
+      <Head>
         <title>Blakes Next.js</title>
-      </head>
+      </Head>
       <body>
         <div>
         {/* <div className={styles.header}>
@@ -70,5 +71,5 @@ require("bootstrap/dist/js/bootstrap");
         </div>
         </div>
       </body>
-    </html>)
+    </Html>)
 }
