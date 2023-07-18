@@ -48,13 +48,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-
-      - name: Build the Project
-        run: |
-          touch .env.local
-          echo NEXT_PUBLIC_SERVICE_ID: ${{secrets.NEXT_PUBLIC_SERVICE_ID}} >> .env.local
-          echo NEXT_PUBLIC_TEMPLATE_ID: ${{secrets.NEXT_PUBLIC_TEMPLATE_ID}} >> .env.local
-          echo NEXT_PUBLIC_KEY: ${{secrets.NEXT_PUBLIC_KEY}} >> .env.local
         env:
           NEXT_PUBLIC_SERVICE_ID: ${{secrets.NEXT_PUBLIC_SERVICE_ID}}
           NEXT_PUBLIC_TEMPLATE_ID: ${{secrets.NEXT_PUBLIC_TEMPLATE_ID}}
@@ -103,6 +96,10 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
+        env:
+          NEXT_PUBLIC_SERVICE_ID: ${{secrets.NEXT_PUBLIC_SERVICE_ID}}
+          NEXT_PUBLIC_TEMPLATE_ID: ${{secrets.NEXT_PUBLIC_TEMPLATE_ID}}
+          NEXT_PUBLIC_KEY: ${{secrets.NEXT_PUBLIC_KEY}}
         id: deployment
         uses: actions/deploy-pages@v2
 
