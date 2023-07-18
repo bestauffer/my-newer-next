@@ -21,7 +21,7 @@ require("bootstrap/dist/js/bootstrap");
     <html lang="en">
       <Head>
         <title>Blakes Next.js</title>
-        <script src="https://platform.linkedin.com/badges/js/profile.js"></script>
+        <Script src="https://platform.linkedin.com/badges/js/profile.js"></Script>
       </Head>
       <body>
         <div>
