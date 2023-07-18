@@ -18,7 +18,7 @@ require("bootstrap/dist/js/bootstrap");
 
   return (
     <>
-    <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
+    
     <html lang="en">
       <head>
         <title>Blakes Next.js</title>
@@ -68,7 +68,7 @@ require("bootstrap/dist/js/bootstrap");
           {children}
         </div>
         </div>
-        
+        <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
       </body>
     </html>
     </>
