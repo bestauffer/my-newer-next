@@ -20,13 +20,13 @@ require("bootstrap/dist/js/bootstrap");
   return (
     <>
       
-    <html lang="en">
+    <div>
     
       <Head>
         <title>Blakes Next.js</title>
         <script src="https://platform.linkedin.com/badges/js/profile.js" strategy="beforeInteractive" async></script>
       </Head>
-      <body>
+      <div>
         <div>
         {/* <div className={styles.header}>
           <div>
@@ -72,8 +72,8 @@ require("bootstrap/dist/js/bootstrap");
         </div>
         </div>
         
-      </body>
-    </html>
+      </div>
+    </div>
     </>
     )
 }
