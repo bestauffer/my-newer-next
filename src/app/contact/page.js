@@ -20,7 +20,7 @@ const Page = () => {
         e.preventDefault();
 
         setFormStatus('Submitting...');
-        emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_KEY)
+        emailjs.sendForm(secrets.NEXT_PUBLIC_SERVICE_ID, secrets.NEXT_PUBLIC_TEMPLATE_ID, form.current, secrets.NEXT_PUBLIC_KEY)
             .then((result) => {
                 setFormStatus('Send');
                 router.push("/");
