@@ -22,10 +22,10 @@ require("bootstrap/dist/js/bootstrap");
       
     <html lang="en">
     
-      <head>
+      <Head>
         <title>Blakes Next.js</title>
         <script src="https://platform.linkedin.com/badges/js/profile.js" strategy="beforeInteractive" async></script>
-      </head>
+      </Head>
       <body>
         <div>
         {/* <div className={styles.header}>
