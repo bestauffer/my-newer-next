@@ -7,7 +7,7 @@ export default function Page() {
     <div style={{backgroundColor:"white", padding:"20px 0px 20px 0px"}}class=" justify-content-center d-flex flex-row">
     <div class=" align-items-center justify-content-center d-flex flex-column">
     
-    <div className="LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="blake-stauffer-174163156" data-version="v1">
+    <div src="https://platform.linkedin.com/badges/js/profile.js" className="LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="blake-stauffer-174163156" data-version="v1">
       {/* <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/blake-stauffer-174163156?trk=profile-badge">Blake S.</a> */}
       </div>
       <div>
