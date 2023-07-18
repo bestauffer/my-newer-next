@@ -44,13 +44,13 @@ const Page = () => {
 <div id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
 <section id="contact">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <h2 class="text-uppercase text-center text-secondary mb-0">Conact Me</h2>
             <hr/>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <form ref={form} id="contactForm" name="sentMessage" onSubmit={onSubmit}>
                         <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" name="name" placeholder="Name"/><label htmlFor="name" class="form-label">Name</label><small class="form-text text-danger help-block"></small></div>
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" name="name" placeholder="Ne"/><label htmlFor="name" class="form-label">Ne</label><small class="form-text text-danger help-block"></small></div>
                         </div>
                         <div class="control-group">
                             <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" required="" name="email" placeholder="Email Address"/><label htmlFor="email" class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
