@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@@/styles/Navbar-Right-Links-Dark-icons.css';
 import React from 'react';
 import { useEffect } from 'react';
+import Head from 'next/head'
 
 import Script from 'next/script';
 
@@ -18,10 +19,10 @@ require("bootstrap/dist/js/bootstrap");
 
   return (
     <html lang="en">
-      <head>
+      <Head>
         <title>Blakes Next.js</title>
         <script src="https://platform.linkedin.com/badges/js/profile.js"></script>
-      </head>
+      </Head>
       <body>
         <div>
         {/* <div className={styles.header}>
