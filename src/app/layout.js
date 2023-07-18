@@ -18,7 +18,7 @@ require("bootstrap/dist/js/bootstrap");
 
   return (
     <>
-    <Script strategy="beforeInteractive" src="https://platform.linkedin.com/badges/js/profile.js"/>
+    <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
     <html lang="en">
       <head>
         <title>Blakes Next.js</title>
