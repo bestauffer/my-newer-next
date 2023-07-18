@@ -4,6 +4,7 @@ import Script from 'next/script';
 export default function Page() {
   return (
     <>
+    <Script src="https://platform.linkedin.com/badges/js/profile.js" strategy="beforeInteractive"/>
     <div style={{backgroundColor:"white", padding:"20px 0px 20px 0px"}}class=" justify-content-center d-flex flex-row">
     <div class=" align-items-center justify-content-center d-flex flex-column">
     
@@ -16,7 +17,7 @@ export default function Page() {
               
     </div>
     </div>
-    <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
+    
     </>
   );
 }

@@ -19,12 +19,11 @@ require("bootstrap/dist/js/bootstrap");
 
   return (
     <>
-      
-    <html lang="en">
     
+    <html lang="en">
+      
       <head>
         <title>Blakes Next.js</title>
-       {/* <script rel="preload" src="https://platform.linkedin.com/badges/js/profile.js" async></script> */}
       </head>
       <body>
         <div>
