@@ -11,7 +11,7 @@ export default function Page() {
       {/* <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/blake-stauffer-174163156?trk=profile-badge">Blake S.</a> */}
       </div>
       <div>
-          <a rel="noopener noreferrer" href="https://github.com/bestauffer"><Image unsized alt="Github Banner" src='https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white'/>GitHub</a>
+          <a rel="noopener noreferrer" href="https://github.com/bestauffer"><Image unsized alt="Github Banner" src='https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white'/></a>
         </div>        
               
     </div>
