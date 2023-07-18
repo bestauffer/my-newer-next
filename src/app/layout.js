@@ -24,7 +24,7 @@ require("bootstrap/dist/js/bootstrap");
     
       <head>
         <title>Blakes Next.js</title>
-        <script type="module" src="https://platform.linkedin.com/badges/js/profile.js" async></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async></script>
       </head>
       <body>
         <div>
