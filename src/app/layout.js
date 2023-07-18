@@ -71,7 +71,7 @@ require("bootstrap/dist/js/bootstrap");
           {children}
         </div>
         </div>
-        <Script src="https://platform.linkedin.com/badges/js/profile.js" strategy="lazyOnload" />
+        <Script src="https://platform.linkedin.com/badges/js/profile.js"/>
       </body>
     </html>)
 }
