@@ -75,12 +75,15 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: 'Create env file'
+        run: |
+          touch .env.local
+          echo NEXT_PUBLIC_SERVICE_ID= ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+          echo NEXT_PUBLIC_TEMPLATE_ID= ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
+          echo NEXT_PUBLIC_KEY= ${{ secrets.NEXT_PUBLIC_KEY }}
+          cat .env
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        env:
-          NEXT_PUBLIC_SERVICE_ID: ${{secrets.NEXT_PUBLIC_SERVICE_ID}}
-          NEXT_PUBLIC_TEMPLATE_ID: ${{secrets.NEXT_PUBLIC_TEMPLATE_ID}}
-          NEXT_PUBLIC_KEY: ${{secrets.NEXT_PUBLIC_KEY}}
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
@@ -97,10 +100,10 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        env:
-          NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
-          NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
-          NEXT_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_KEY }}
+        # env:
+        #   NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+        #   NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
+        #   NEXT_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_KEY }}
         id: deployment
         uses: actions/deploy-pages@v2
 
