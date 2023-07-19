@@ -20,8 +20,6 @@ const Page = () => {
         e.preventDefault();
 
         setFormStatus('Submitting...');
-        if (e.target.elements.name.value && e.target.elements.email.value && e.target.elements.message.value && e.target.elements.subject.value) {
-            alert(e.target.elements);
             emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_KEY)
                 .then((result) => {
                     setFormStatus('Send');
@@ -34,7 +32,7 @@ const Page = () => {
             e.target.elements.email.value = '';
             e.target.elements.message.value = '';
             e.target.elements.subject.value = '';
-        }
+
 
     }
 
