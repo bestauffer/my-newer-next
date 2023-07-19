@@ -23,7 +23,7 @@ const Page = () => {
             emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_KEY)
                 .then((result) => {
                     setFormStatus('Send');
-                    //router.push("/");
+                    router.push("/");
                 }, (error) => {
                     setFormStatus('Error');
                 });
