@@ -75,6 +75,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        # generates the env file for the app in gh-pages
       - name: 'Create env file'
         run: |
           echo "${{ secrets.ENV_FILE }}" > .env
@@ -97,10 +98,6 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        # env:
-        #   NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
-        #   NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
-        #   NEXT_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_KEY }}
         id: deployment
         uses: actions/deploy-pages@v2
 
