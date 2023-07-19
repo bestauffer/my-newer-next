@@ -81,7 +81,7 @@ jobs:
           echo NEXT_PUBLIC_SERVICE_ID= ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
           echo NEXT_PUBLIC_TEMPLATE_ID= ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
           echo NEXT_PUBLIC_KEY= ${{ secrets.NEXT_PUBLIC_KEY }}
-          cat .env
+          cat .env.local
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
