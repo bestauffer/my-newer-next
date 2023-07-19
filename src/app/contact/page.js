@@ -50,16 +50,16 @@ const Page = () => {
                 <div class="col-lg-8 mx-auto">
                     <form ref={form} id="contactForm" name="sentMessage" onSubmit={onSubmit}>
                         <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" name="name" placeholder="Name"/><label htmlFor="name" class="form-label">Name</label><small class="form-text text-danger help-block"></small></div>
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" name="name" placeholder="Name" required/><label htmlFor="name" class="form-label">Name</label><small class="form-text text-danger help-block"></small></div>
                         </div>
                         <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" required="" name="email" placeholder="Email Address"/><label htmlFor="email" class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" name="email" placeholder="Email Address" required/><label htmlFor="email" class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
                         </div>
                         <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="subject" required="" name="subject" placeholder="Subject"/><label htmlFor="subject" class="form-label">Subject</label><small class="form-text text-danger help-block"></small></div>
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" required/><label htmlFor="subject" class="form-label">Subject</label><small class="form-text text-danger help-block"></small></div>
                         </div>
                         <div class="control-group">
-                            <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" required="" name="message" placeholder="Message" style={{height: "150px"}}></textarea><label htmlFor="message" class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
+                            <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" name="message" placeholder="Message" style={{height: "150px"}} required></textarea><label htmlFor="message" class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
                         </div>
                         {/* <div id="success"></div> */}
                         <div class="d-flex justify-content-center"><button class="btn btn-primary flex-row btn-xl" id="sendMessageButton" type="submit">{formStatus}</button></div>
